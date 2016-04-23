@@ -1,3 +1,5 @@
+# implemented from the pseudocode in Wikipedia
+
 def partition(A, lo, hi):
     pivot = A[hi]
     i = lo
@@ -7,7 +9,6 @@ def partition(A, lo, hi):
             i += 1
     A[i], A[hi] = A[hi], A[i]
     return(i)
-
 
 def quicksort(A, lo, hi):
     if lo < hi:
